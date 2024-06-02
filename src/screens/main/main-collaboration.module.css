@@ -1,0 +1,48 @@
+.mainCollaborationSection {
+  padding: 48px 0 96px;
+  scroll-margin-top: var(--header-height);
+}
+
+.container {
+  composes: container from global;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 12px;
+  color: var(--mine-shaft);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  max-width: 488px;
+  margin-bottom: 48px;
+  color: var(--emperor);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.company {
+}
+
+.companyLink {
+  display: flex;
+}
+
+.companyLogo {
+  max-width: 224px;
+  width: 100%;
+  max-height: 64px;
+}

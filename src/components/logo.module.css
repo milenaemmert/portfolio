@@ -1,0 +1,8 @@
+.link {
+  display: flex;
+}
+
+.logo {
+  width: 48px;
+  color: var(--mine-shaft);
+}

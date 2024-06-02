@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.social {
+}
+
+.link {
+}
+
+.icon {
+  width: 32px;
+  color: var(--crusta);
+}

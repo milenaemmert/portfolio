@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--mine-shaft);
+  padding: 24px 0;
+}
+
+.container {
+  composes: container from global;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}

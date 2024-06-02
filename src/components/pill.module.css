@@ -1,0 +1,12 @@
+.pill {
+  display: flex;
+}
+
+.link {
+  padding: 10px 16px;
+  border: 1px solid var(--mercury);
+  border-radius: 32px;
+  color: var(--mine-shaft);
+  font-size: 14px;
+  font-weight: 400;
+}

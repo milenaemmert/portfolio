@@ -1,0 +1,23 @@
+.knowledgeCard {
+}
+
+.thumbnail {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 8px;
+  color: var(--mine-shaft);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.description {
+  margin-bottom: 16px;
+  color: var(--emperor);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link {
+}

@@ -1,0 +1,23 @@
+.mainProjectsSection {
+  padding: 48px 0;
+  scroll-margin-top: var(--header-height);
+}
+
+.container {
+  composes: container from global;
+}
+
+.title {
+  margin-bottom: 40px;
+  color: var(--mine-shaft);
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
