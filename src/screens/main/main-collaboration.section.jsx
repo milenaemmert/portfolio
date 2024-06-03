@@ -13,7 +13,7 @@ export const MainCollaborationSection = () => {
 
         <p className={s.description}>
           {t(
-            'Tive a oportunidade de ministrar palestras e treinamentos nas seguintes empresas:'
+            'Tive a oportunidade de ministrar palestras e treinamentos para as seguintes empresas:'
           )}
         </p>
 

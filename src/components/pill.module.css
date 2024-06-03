@@ -9,4 +9,5 @@
   color: var(--mine-shaft);
   font-size: 14px;
   font-weight: 400;
+  transition: transform 0.3s;
 }

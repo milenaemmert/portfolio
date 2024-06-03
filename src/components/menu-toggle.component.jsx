@@ -4,14 +4,16 @@ import s from './menu-toggle.module.css'
 
 export const MenuToggle = () => {
   const { t } = useTranslation()
-  const { isMenuOpen, setIsMenuOpen } = useHeader()
+  const { isMenuOpen, toggleMenu } = useHeader()
 
   return (
     <button
       className={s.menuToggle}
       type='button'
-      title={isMenuOpen ? t('Fechar menu') : t('Abrir menu')}
-      onClick={() => setIsMenuOpen((current) => !current)}
+      title={
+        isMenuOpen ? t('Fechar o menu principal') : t('Abrir o menu principal')
+      }
+      onClick={() => toggleMenu()}
     >
       {isMenuOpen ? closeIcon(s.icon) : burgerIcon(s.icon)}
     </button>

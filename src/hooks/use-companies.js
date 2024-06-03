@@ -16,37 +16,37 @@ export const useCompanies = () => {
     {
       logo: boticarioLogo,
       link: 'https://www.boticario.com.br',
-      title: t('Acessar o site oficial do Boticário')
+      title: t('Acessar o site do Boticário')
     },
     {
       logo: aluraLogo,
       link: 'https://www.alura.com.br',
-      title: t('Acessar o site oficial da Alura')
+      title: t('Acessar o site da Alura')
     },
     {
       logo: ambevLogo,
       link: 'https://www.ambev.com.br',
-      title: t('Acessar o site oficial da Ambev')
+      title: t('Acessar o site da Ambev')
     },
     {
       logo: suzanoLogo,
       link: 'https://www.suzano.com.br',
-      title: t('Acessar o site oficial da Suzano')
+      title: t('Acessar o site da Suzano')
     },
     {
       logo: globoLogo,
       link: 'https://www.globo.com',
-      title: t('Acessar o site oficial da Globo')
+      title: t('Acessar o site da Globo')
     },
     {
       logo: zenviaLogo,
       link: 'https://www.zenvia.com',
-      title: t('Acessar o site oficial da Zenvia')
+      title: t('Acessar o site da Zenvia')
     },
     {
       logo: algarLogo,
       link: 'https://www.algar.com.br',
-      title: t('Acessar o site oficial da Algar')
+      title: t('Acessar o site da Algar')
     }
   ]
 }

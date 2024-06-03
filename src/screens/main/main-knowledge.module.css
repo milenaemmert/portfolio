@@ -6,13 +6,17 @@
 .container {
   composes: container from global;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-}
-
-@media screen and (min-width: 769px) {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 56px;
 }
 
 @media screen and (min-width: 1025px) {
+  .mainKnowledgeSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
 }

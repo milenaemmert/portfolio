@@ -13,18 +13,18 @@ export const LanguageToggle = () => {
 
     const languages = Object.values(LANGUAGES)
 
-    const optionClassName = (option) =>
-      language === option ? `${s.option} ${s.selected}` : `${s.option}`
-
     return (
       <div className={s.options}>
         {languages.map((option) => {
-          const title = t('Selecionar idioma')
+          const optionClassName =
+            language === option ? `${s.option} ${s.selected}` : `${s.option}`
+
+          const title = t('Selecionar o idioma')
 
           return (
             <button
               key={option}
-              className={optionClassName(option)}
+              className={optionClassName}
               type='button'
               title={`${title} ${option}`}
               onClick={() => setLanguage(option)}
@@ -43,8 +43,8 @@ export const LanguageToggle = () => {
         type='button'
         title={
           isLanguageToggleOpen
-            ? t('Fechar menu de idiomas')
-            : t('Abrir menu de idiomas')
+            ? t('Fechar o menu de idiomas')
+            : t('Abrir o menu de idiomas')
         }
         onClick={() => setIsLanguageToggleOpen((current) => !current)}
       >

@@ -45,3 +45,11 @@
   justify-content: center;
   gap: 12px;
 }
+
+/* @media screen and (min-width: 769px) {
+  .knowledgeCard {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+ */

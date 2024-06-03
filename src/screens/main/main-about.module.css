@@ -27,7 +27,7 @@
 }
 
 .description {
-  max-width: 614px;
+  max-width: 612px;
   margin-bottom: 48px;
   color: var(--emperor);
   font-size: 16px;
@@ -36,12 +36,20 @@
 }
 
 .photo {
-  max-width: 304px;
+  max-width: 320px;
   width: 100%;
 }
 
-@media screen and (min-width: 769px) {
-}
-
 @media screen and (min-width: 1025px) {
+  .mainAboutSection {
+    padding: calc(64px + var(--header-height)) 0 64px;
+  }
+
+  .description {
+    max-width: 752px;
+  }
+
+  .photo {
+    max-width: 400px;
+  }
 }

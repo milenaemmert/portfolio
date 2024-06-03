@@ -30,6 +30,7 @@
 .companies {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 48px;
 }
@@ -45,4 +46,28 @@
   max-width: 224px;
   width: 100%;
   max-height: 64px;
+}
+
+@media screen and (min-width: 769px) {
+  .companies {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 56px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .mainCollaborationSection {
+    padding: 64px 0 128px;
+  }
+
+  .companyLink {
+    filter: grayscale(1) brightness(2) contrast(0.4);
+    transition: filter 0.3s;
+  }
+
+  .companyLink:hover,
+  .companyLink:focus-visible {
+    filter: grayscale(0) brightness(1) contrast(1);
+  }
 }

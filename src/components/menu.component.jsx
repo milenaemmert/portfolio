@@ -1,19 +1,34 @@
-import { useNav } from '../hooks'
+import { useHeader, useNav } from '../hooks'
 import { Social } from '.'
 import s from './menu.module.css'
 
 export const Menu = () => {
+  const { navLink, selectNavLink } = useHeader()
   const links = useNav()
 
   return (
     <div className={s.menu}>
       <div className={s.container}>
-        <nav className={s.nav}>
-          {links.map(({ name, anchor, title }) => (
-            <a key={name} title={title} href={anchor}>
-              {name}
-            </a>
-          ))}
+        <nav>
+          <ul className={s.navList}>
+            {links.map(({ id, name, anchor, title }) => {
+              const navLinkClassName =
+                navLink === id ? `${s.navLink} ${s.isNavLinkActive}` : s.navLink
+
+              return (
+                <li key={id}>
+                  <a
+                    className={navLinkClassName}
+                    title={title}
+                    href={anchor}
+                    onClick={() => selectNavLink(id)}
+                  >
+                    {name}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
         </nav>
       </div>
 

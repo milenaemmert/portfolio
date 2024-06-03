@@ -12,15 +12,18 @@ export const useKnowledges = () => {
         'A criatividade faz parte da minha personalidade. Mas, para além do visual, meus projetos também costumam ser alinhados com as melhores práticas de UX.'
       ),
       list: [
-        { name: 'UI/UX', link: '' },
-        { name: 'Web', link: 'https://pt.wikipedia.org/wiki/Web_design' },
-        { name: 'GIMP', link: 'https://www.gimp.org' },
-        { name: 'Canva', link: 'https://www.canva.com/pt_br' },
         {
-          name: 'Illustrator',
+          name: t('UI/UX'),
+          link: 'https://dev.to/milenaemmert/ate-os-ventos-te-sopram-experiencias-c9l'
+        },
+        { name: t('Web'), link: 'https://pt.wikipedia.org/wiki/Web_design' },
+        { name: t('GIMP'), link: 'https://www.gimp.org' },
+        { name: t('Canva'), link: 'https://www.canva.com/pt_br' },
+        {
+          name: t('Illustrator'),
           link: 'https://www.adobe.com/br/products/illustrator.html'
         },
-        { name: 'Figma', link: 'https://www.figma.com' }
+        { name: t('Figma'), link: 'https://www.figma.com' }
       ]
     },
     {
@@ -31,20 +34,20 @@ export const useKnowledges = () => {
       ),
       list: [
         {
-          name: 'HTML',
+          name: t('HTML'),
           link: 'https://developer.mozilla.org/pt-BR/docs/Web/HTML'
         },
         {
-          name: 'CSS',
+          name: t('CSS'),
           link: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS'
         },
         {
-          name: 'JavaScript',
+          name: t('JavaScript'),
           link: 'https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript'
         },
-        { name: 'Typescript', link: 'https://www.typescriptlang.org' },
-        { name: 'React', link: 'https://react.dev' },
-        { name: 'Git', link: 'https://git-scm.com' }
+        { name: t('TypeScript'), link: 'https://www.typescriptlang.org' },
+        { name: t('React'), link: 'https://react.dev' },
+        { name: t('Git'), link: 'https://git-scm.com' }
       ]
     },
     {
@@ -54,17 +57,17 @@ export const useKnowledges = () => {
         'Os dados nos guiam e nos levam a lugares impensáveis. Por isso, as decisões que tomo em meu trabalho partem da coleta, análise e tratamento de dados.'
       ),
       list: [
-        { name: 'MySQL', link: 'https://www.mysql.com' },
+        { name: t('MySQL'), link: 'https://www.mysql.com' },
         {
-          name: 'Excel',
+          name: t('Excel'),
           link: 'https://www.microsoft.com/pt-br/microsoft-365/excel'
         },
-        { name: 'Apps Script', link: 'https://www.google.com/script/start' },
+        { name: t('Python'), link: 'https://www.python.org' },
+        { name: t('Apps Script'), link: 'https://www.google.com/script/start' },
         {
-          name: 'Power BI',
+          name: t('Power BI'),
           link: 'https://www.microsoft.com/pt-br/power-platform/products/power-bi'
-        },
-        { name: 'Python', link: 'https://www.python.org' }
+        }
       ]
     }
   ]

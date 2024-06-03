@@ -56,7 +56,32 @@
 }
 
 @media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 0;
+  }
+
+  .social {
+    align-items: flex-start;
+  }
+
+  .socialTip {
+    text-align: left;
+  }
+
+  .contact {
+    align-items: flex-end;
+  }
+
+  .contactList {
+    align-items: flex-end;
+  }
 }
 
 @media screen and (min-width: 1025px) {
+  .mainContactSection {
+    padding: 64px 0;
+  }
 }

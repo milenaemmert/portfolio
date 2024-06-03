@@ -5,14 +5,22 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
   const { t } = useTranslation()
 
   return (
-    <li className={s.knowledgeCard}>
-      <img className={s.thumbnail} src={thumbnail} alt='' />
+    <li className={s.projectCard}>
+      <div className={s.thumbnailWrapper}>
+        <img className={s.thumbnail} src={thumbnail} alt='' />
+      </div>
 
       <h4 className={s.title}>{title}</h4>
 
       <p className={s.description}>{description}</p>
 
-      <a className={s.link} href={link} rel='noopener' target='_blank'>
+      <a
+        className={s.link}
+        title={t('Ver projeto')}
+        href={link}
+        rel='noopener'
+        target='_blank'
+      >
         {t('Ver projeto')}
       </a>
     </li>

@@ -13,11 +13,23 @@
   flex-grow: 1;
 }
 
-.nav {
+.navList {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+}
+
+.navLink {
+  display: flex;
+  padding: 8px 0;
+  color: var(--gray);
+  font-size: 22px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.isNavLinkActive {
+  color: var(--mine-shaft);
 }
 
 .social {
