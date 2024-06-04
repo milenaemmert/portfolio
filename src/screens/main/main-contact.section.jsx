@@ -25,11 +25,25 @@ export const MainContactSection = () => {
           <h3 className={s.contactTitle}>{t('Vamos conversar?')}</h3>
 
           <div className={s.contactList}>
-            <span className={s.contactItem}>{t('+55 51 98313-0810')}</span>
+            <a
+              className={s.contactLink}
+              title={t('Me chamar no WhatsApp')}
+              href='https://wa.me/5551983130810'
+              rel='noopener'
+              target='_blank'
+            >
+              {t('+55 51 98313-0810')}
+            </a>
 
-            <span className={s.contactItem}>
+            <a
+              className={s.contactLink}
+              title={t('Me enviar um email')}
+              href='mailto:milena.emmert@outlook.com'
+              rel='noopener'
+              target='_blank'
+            >
               {t('milena.emmert@outlook.com')}
-            </span>
+            </a>
           </div>
         </div>
       </div>

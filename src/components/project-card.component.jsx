@@ -1,3 +1,4 @@
+import { chevronIcon } from '../assets/icons'
 import { useTranslation } from '../hooks'
 import s from './project-card.module.css'
 
@@ -21,6 +22,7 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
         rel='noopener'
         target='_blank'
       >
+        {chevronIcon(s.icon)}
         {t('Ver projeto')}
       </a>
     </li>

@@ -1,4 +1,5 @@
 import FocusTrap from 'focus-trap-react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useHeader, useBreakpoint, useNav } from '../hooks'
 import { Logo, LanguageToggle, MenuToggle, Menu } from '.'
 import s from './header.module.css'
@@ -55,7 +56,25 @@ export const Header = () => {
           </div>
         </div>
 
-        {isMenuOpen && <Menu />}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className={s.menu}
+              initial={{ opacity: 0, x: '-100%' }}
+              animate={{
+                opacity: 1,
+                x: 0
+              }}
+              exit={{
+                opacity: 0,
+                x: '-100%'
+              }}
+              transition={{ duration: 0.4, ease: 'easeInOut' }}
+            >
+              <Menu />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
     </FocusTrap>
   )

@@ -25,18 +25,25 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 
 ## Ainda preciso fazer:
 
-- [ ] Fazer animações básicas com framer-motion
+- [x] Ajeitar escritas dos projetos e suas traduções
+- [x] Finalizar link Ver projeto
+- [x] Reexportar ícones das redes sociais no tamanho correto
+- [x] Corrigir imagem do último projeto
+- [x] Comprimir imagens dos projetos
+- [x] Trocar favicon
+- [x] Melhorar qualidade da foto principal
+- [x] Fazer animações básicas com framer-motion (menu mobile e menu de idiomas)
+- [x] Adicionar links nos contatos de whats e email
+- [ ] Corrigir logo do Boticário
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras
-- [ ] Reexportar ícones das redes sociais no tamanho correto
-- [ ] Corrigir logo do Boticário
 - [ ] Adicionar alts
 - [ ] Adicionar aria-labels
 - [ ] Adicionar detalhes extras na sessão sobre
-- [ ] Finalizar link Ver projeto
 - [ ] Adicionar hover na Pill
 - [ ] Adicionar chevrons
 - [ ] Tentar transformar languages em hook
+- [ ] Incrementar uso do ESLint
 
 ## Contato
 

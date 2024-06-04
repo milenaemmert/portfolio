@@ -1,4 +1,4 @@
-import aboutMi from '../../assets/images/about-mi.png'
+import miPhoto from '../../assets/images/main-about/mi-photo.png'
 import { ABOUT_ANCHOR } from '../../constants'
 import { useTranslation } from '../../hooks'
 import s from './main-about.module.css'
@@ -19,7 +19,7 @@ export const MainAboutSection = () => {
           )}
         </p>
 
-        <img alt='' className={s.photo} src={aboutMi} />
+        <img alt='' className={s.photo} src={miPhoto} />
       </div>
     </section>
   )

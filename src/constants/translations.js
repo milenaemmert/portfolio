@@ -1,4 +1,14 @@
 export const TRANSLATIONS = {
+  // COMMON
+  'Projetos': {
+    en: 'Projects'
+  },
+  'Ver projeto': {
+    en: 'View project'
+  },
+  'Colaboração': {
+    en: 'Collaboration'
+  },
   // HEADER
   'Selecionar o idioma': {
     en: 'Select the language'
@@ -30,14 +40,8 @@ export const TRANSLATIONS = {
   'Ir para a sessão "Conhecimento"': {
     en: 'Go to "Knowledge"'
   },
-  'Projetos': {
-    en: 'Projects'
-  },
   'Ir para a sessão "Projetos"': {
     en: 'Go to "Projects"'
-  },
-  'Colaboração': {
-    en: 'Collaboration'
   },
   'Ir para a sessão "Colaboração"': {
     en: 'Go to "Collaboration"'
@@ -161,44 +165,35 @@ export const TRANSLATIONS = {
     en: 'Power BI'
   },
   // MAIN PROJECTS SECTION
-  'Projetos': {
-    en: 'Projects'
-  },
-  'Project ICO': {
+  'Projeto ICO': {
     en: 'Project ICO'
   },
-  'Plataforma de ícones visualmente atrativa, totalmente responsiva e com boas práticas de acessibilidade. Feita com apenas HTML, CSS e JavaScript vanilla.':
+  'Se trata de uma plataforma de ícones visualmente atrativa, totalmente responsiva e com boas práticas de acessibilidade. Desenvolvida com HTML, CSS e JavaScript vanilla.':
     {
-      en: 'A visually appealing icon platform, fully responsive and following good accessibility practices. Built using only HTML, CSS, and vanilla JavaScript.'
+      en: 'It is a visually appealing icon platform, fully responsive and following good accessibility practices. Developed with HTML, CSS, and vanilla JavaScript.'
     },
-  'Hackathon de UX/UI': {
+  'Hackathon UX/UI': {
     en: 'UX/UI Hackathon'
   },
-  'Solução proposta através de UX, UI e desenvolvimento para um problema enfrentado por uma empresa de tecnologia.':
+  'Solução proposta durante um hackathon para um problema enfrentado por uma empresa de tecnologia. Foram utilizados conceitos de UX, UI e desenvolvimento front-end.':
     {
-      en: 'A solution proposed through UX, UI, and development for a problem faced by a technology company.'
+      en: 'Solution proposed in a hackathon for a problem faced by a technology company. UX, UI, and front-end development concepts were utilized.'
     },
-  'Code snippet highlight': {
-    en: 'Code snippet highlight'
+  'Editor Com Destaque de Sintaxe': {
+    en: 'Syntax Highlighting Editor'
   },
-  'Editor de pequenos códigos (snippets) com aplicação de "sintaxe highlight", utilizando a lib highlight.js. É possível salvar o código no local storage do navegador.':
+  'Editor de código com destaque de sintaxe, desenvolvido com highlight.js. Também é possível salvar o código no local storage do navegador.':
     {
-      en: "A small code snippet editor with syntax highlighting, using the highlight.js library. It allows you to save code in the browser's local storage."
+      en: "Code editor with syntax highlighting, developed with highlight.js. It also allows saving the code in the browser's local storage."
     },
-  'Prototipação de UI e design gráfico': {
-    en: 'UI prototyping and graphic design'
+  'Prototipação de UI e Design Gráfico': {
+    en: 'UI Prototyping and Graphic Design'
   },
   'Protótipo de alta fidelidade com fluxos de navegação do usuário e exploração dos princípios de design gráfico e análises heurísticas.':
     {
       en: 'High-fidelity prototype with user navigation flows and exploration of graphic design principles and heuristic analyses.'
     },
-  'Ver projeto': {
-    en: 'View project'
-  },
   // MAIN COLLABORATION SECTION
-  'Colaboração': {
-    en: 'Collaboration'
-  },
   'Tive a oportunidade de ministrar palestras e treinamentos para as seguintes empresas:':
     {
       en: "I've had the opportunity to give lectures and training sessions for the following companies:"
@@ -234,7 +229,13 @@ export const TRANSLATIONS = {
   '+55 51 98313-0810': {
     en: '+55 51 98313-0810'
   },
+  'Me chamar no WhatsApp': {
+    en: 'Message me on WhatsApp'
+  },
   'milena.emmert@outlook.com': {
     en: 'milena.emmert@outlook.com'
+  },
+  'Me enviar um email': {
+    en: 'Send me an email'
   }
 }

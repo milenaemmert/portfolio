@@ -20,6 +20,7 @@
 
 .projects {
   display: grid;
+  align-items: flex-start;
   grid-template-columns: 1fr;
   gap: 56px;
 }
@@ -31,6 +32,10 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .mainProjectsSection {
+    padding: 64px 0;
+  }
+
   .projects {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;

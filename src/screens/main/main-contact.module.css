@@ -47,12 +47,17 @@
   gap: 4px;
 }
 
-.contactItem {
+.contactLink {
   color: var(--tundora);
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   word-break: break-all;
+  transition: color 0.3s;
+}
+
+.contactLink:hover {
+  color: var(--mine-shaft);
 }
 
 @media screen and (min-width: 769px) {

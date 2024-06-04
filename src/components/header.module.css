@@ -14,6 +14,7 @@
 
 .wrapper {
   composes: headerBackground from global;
+  min-height: var(--header-height);
   height: var(--header-height);
   border-bottom: 1px solid var(--mercury);
 }
@@ -30,6 +31,11 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
   height: 100%;
 }
 
