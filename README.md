@@ -34,14 +34,16 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Melhorar qualidade da foto principal
 - [x] Fazer animações básicas com framer-motion (menu mobile e menu de idiomas)
 - [x] Adicionar links nos contatos de whats e email
-- [ ] Corrigir logo do Boticário
+- [x] Corrigir visual do logo do Boticário
+- [x] Fechar menu de linguagens quando uma linguagem for selecionada
+- [x] Adicionar alts nas imagens
+- [x] Adicionar chevron nos links do header
+- [x] Melhorar animação de abrir e fechar do menu de linguagens
+- [x] Adicionar detalhes abstratos na sessão sobre
+- [ ] Adicionar hover nas pills
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras
-- [ ] Adicionar alts
 - [ ] Adicionar aria-labels
-- [ ] Adicionar detalhes extras na sessão sobre
-- [ ] Adicionar hover na Pill
-- [ ] Adicionar chevrons
 - [ ] Tentar transformar languages em hook
 - [ ] Incrementar uso do ESLint
 

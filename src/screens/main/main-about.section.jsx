@@ -1,3 +1,5 @@
+import detailLeft from '../../assets/images/main-about/detail-left.png'
+import detailRight from '../../assets/images/main-about/detail-right.png'
 import miPhoto from '../../assets/images/main-about/mi-photo.png'
 import { ABOUT_ANCHOR } from '../../constants'
 import { useTranslation } from '../../hooks'
@@ -9,6 +11,9 @@ export const MainAboutSection = () => {
   return (
     <section id={ABOUT_ANCHOR} className={s.mainAboutSection}>
       <div className={s.container}>
+        <img className={s.detailLeft} src={detailLeft} alt='' />
+        <img className={s.detailRight} src={detailRight} alt='' />
+
         <h2 className={s.subtitle}>{t('Dev & Designer')}</h2>
 
         <h1 className={s.title}>{t('Milena Emmert')}</h1>
@@ -19,7 +24,7 @@ export const MainAboutSection = () => {
           )}
         </p>
 
-        <img alt='' className={s.photo} src={miPhoto} />
+        <img className={s.photo} src={miPhoto} alt='' />
       </div>
     </section>
   )

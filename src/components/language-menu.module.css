@@ -1,0 +1,27 @@
+.languageMenu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.icon {
+  width: 32px;
+  color: var(--tundora);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.option {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.selected {
+  color: var(--mine-shaft);
+}

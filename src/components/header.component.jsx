@@ -1,7 +1,8 @@
 import FocusTrap from 'focus-trap-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { chevronIcon } from '../assets/icons'
 import { useHeader, useBreakpoint, useNav } from '../hooks'
-import { Logo, LanguageToggle, MenuToggle, Menu } from '.'
+import { Logo, LanguageMenu, MenuToggle, Menu } from '.'
 import s from './header.module.css'
 
 export const Header = () => {
@@ -29,6 +30,22 @@ export const Header = () => {
                   href={anchor}
                   onClick={() => selectNavLink(id)}
                 >
+                  <AnimatePresence>
+                    {navLink === id && (
+                      <motion.div
+                        initial={{ width: 0, marginRight: 0 }}
+                        animate={{ width: 14, marginRight: 4 }}
+                        exit={{ width: 0, marginRight: 0 }}
+                        transition={{
+                          width: { duration: 0.4, ease: 'easeInOut' },
+                          marginRight: { duration: 0.8, ease: 'easeOut' }
+                        }}
+                      >
+                        {chevronIcon(s.navLinkIcon)}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   {name}
                 </a>
               </li>
@@ -49,7 +66,7 @@ export const Header = () => {
             <div className={s.controls}>
               {renderNav()}
 
-              <LanguageToggle />
+              <LanguageMenu />
 
               {!isDesktop && <MenuToggle />}
             </div>

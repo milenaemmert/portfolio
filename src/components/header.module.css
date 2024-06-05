@@ -51,6 +51,8 @@
 }
 
 .navItem {
+  display: flex;
+  align-items: center;
   height: 100%;
 }
 
@@ -64,6 +66,10 @@
   font-size: 16px;
   font-weight: 600;
   transition: color 0.3s;
+}
+
+.navLinkIcon {
+  width: 100%;
 }
 
 .navLink:hover,
@@ -80,7 +86,7 @@
   width: 100%;
   height: 1px;
   transform: scaleX(0);
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .isNavLinkActive {

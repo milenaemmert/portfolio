@@ -165,6 +165,10 @@ export const TRANSLATIONS = {
     en: 'Power BI'
   },
   // MAIN PROJECTS SECTION
+  'Miniatura mostrando a interface do Projeto ICO, que conta com vários controles para modificar a aparência dos ícones disponíveis na plataforma.':
+    {
+      en: 'Thumbnail showing the interface of ICO Project, which includes various controls to modify the appearance of the icons available on the platform.'
+    },
   'Projeto ICO': {
     en: 'Project ICO'
   },
@@ -172,6 +176,9 @@ export const TRANSLATIONS = {
     {
       en: 'It is a visually appealing icon platform, fully responsive and following good accessibility practices. Developed with HTML, CSS, and vanilla JavaScript.'
     },
+  'Miniatura mostrando o fluxo de UX criado durante um hackathon.': {
+    en: 'Thumbnail showing the UX flow created during a hackathon.'
+  },
   'Hackathon UX/UI': {
     en: 'UX/UI Hackathon'
   },
@@ -179,12 +186,20 @@ export const TRANSLATIONS = {
     {
       en: 'Solution proposed in a hackathon for a problem faced by a technology company. UX, UI, and front-end development concepts were utilized.'
     },
+  'Miniatura mostrando a interface do editor de código, que conta com a presença do código atual centralizado e algumas opções de personalização ao lado.':
+    {
+      en: 'Thumbnail showing the interface of the code editor, featuring the current code centered and some customization options on the side.'
+    },
   'Editor Com Destaque de Sintaxe': {
     en: 'Syntax Highlighting Editor'
   },
   'Editor de código com destaque de sintaxe, desenvolvido com highlight.js. Também é possível salvar o código no local storage do navegador.':
     {
       en: "Code editor with syntax highlighting, developed with highlight.js. It also allows saving the code in the browser's local storage."
+    },
+  'Miniatura mostrando o fluxo do protótipo de alta fidelidade criado para fins de estudo.':
+    {
+      en: 'Thumbnail showing the high-fidelity prototype flow created for study purposes.'
     },
   'Prototipação de UI e Design Gráfico': {
     en: 'UI Prototyping and Graphic Design'
