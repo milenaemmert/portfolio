@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react'
+import PropTypes from 'prop-types'
 import { TRANSLATIONS, LANGUAGES } from '../constants'
 
 export const TranslationContext = createContext()
@@ -25,4 +26,8 @@ export const TranslationProvider = ({ children }) => {
       {children}
     </TranslationContext.Provider>
   )
+}
+
+TranslationProvider.propTypes = {
+  children: PropTypes.node.isRequired
 }

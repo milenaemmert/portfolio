@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { chevronIcon } from '../assets/icons'
 import { useTranslation } from '../hooks'
 import s from './project-card.module.css'
@@ -27,4 +28,14 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
       </a>
     </li>
   )
+}
+
+ProjectCard.propTypes = {
+  thumbnail: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired
+  }).isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 }

@@ -1,4 +1,5 @@
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState, useEffect, useCallback } from 'react'
+import PropTypes from 'prop-types'
 import { useBreakpoint, useScrollLock, useNav } from '../hooks'
 
 export const HeaderContext = createContext()
@@ -10,8 +11,16 @@ export const HeaderProvider = ({ children }) => {
   const { isDesktop } = useBreakpoint()
   const { lockScroll, unlockScroll } = useScrollLock()
 
+  const closeMenu = useCallback(() => {
+    if (!isMenuOpen) return
+
+    setIsMenuOpen(false)
+    unlockScroll()
+  }, [isMenuOpen, unlockScroll])
+
   useEffect(() => {
     closeMenu()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDesktop])
 
   function openMenu() {
@@ -19,13 +28,6 @@ export const HeaderProvider = ({ children }) => {
 
     setIsMenuOpen(true)
     lockScroll()
-  }
-
-  function closeMenu() {
-    if (!isMenuOpen) return
-
-    setIsMenuOpen(false)
-    unlockScroll()
   }
 
   function toggleMenu() {
@@ -50,4 +52,8 @@ export const HeaderProvider = ({ children }) => {
       {children}
     </HeaderContext.Provider>
   )
+}
+
+HeaderProvider.propTypes = {
+  children: PropTypes.node.isRequired
 }

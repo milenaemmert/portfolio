@@ -6,12 +6,15 @@
 }
 
 .social {
-}
-
-.link {
+  transition: transform 0.3s;
 }
 
 .icon {
   width: 32px;
   color: var(--crusta);
+}
+
+.social:hover,
+.social:focus-visible {
+  transform: scale(1.2);
 }

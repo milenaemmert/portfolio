@@ -40,12 +40,16 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Adicionar chevron nos links do header
 - [x] Melhorar animação de abrir e fechar do menu de linguagens
 - [x] Adicionar detalhes abstratos na sessão sobre
-- [ ] Adicionar hover nas pills
+- [x] Implementar clarity
+- [x] Fazer uso básico do ESLint
+- [x] Adicionar prop validations nos componentes
+- [x] Adicionar hover nas pills
+- [x] Adicionar hover nas redes sociais
+- [ ] Adicionar aria-labels
+- [ ] Incrementar uso do ESLint
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras
-- [ ] Adicionar aria-labels
 - [ ] Tentar transformar languages em hook
-- [ ] Incrementar uso do ESLint
 
 ## Contato
 

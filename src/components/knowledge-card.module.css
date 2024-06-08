@@ -43,13 +43,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 
-/* @media screen and (min-width: 769px) {
-  .knowledgeCard {
-    max-width: 320px;
-    width: 100%;
-  }
+.pill {
+  padding: 10px 16px;
+  border: 1px solid var(--mercury);
+  border-radius: 32px;
+  color: var(--mine-shaft);
+  font-size: 14px;
+  font-weight: 400;
+  transition: transform 0.3s, border-color 0.2s;
 }
- */
+
+.pill:hover,
+.pill:focus-visible {
+  transform: translateY(3px);
+  border-color: var(--gray);
+}

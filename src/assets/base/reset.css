@@ -25,6 +25,7 @@ ul {
   list-style: none;
 }
 
+li,
 svg {
-  display: block;
+  display: flex;
 }

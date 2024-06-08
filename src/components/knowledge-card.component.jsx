@@ -1,4 +1,4 @@
-import { Pill } from '.'
+import PropTypes from 'prop-types'
 import s from './knowledge-card.module.css'
 
 export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
@@ -12,9 +12,31 @@ export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
 
       <ul className={s.pills}>
         {knowledges.map(({ name, link }) => (
-          <Pill key={name} name={name} link={link} />
+          <li key={name}>
+            <a
+              className={s.pill}
+              title={name}
+              href={link}
+              rel='noopener'
+              target='_blank'
+            >
+              {name}
+            </a>
+          </li>
         ))}
       </ul>
     </li>
   )
+}
+
+KnowledgeCard.propTypes = {
+  icon: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  knowledges: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired
+    })
+  ).isRequired
 }

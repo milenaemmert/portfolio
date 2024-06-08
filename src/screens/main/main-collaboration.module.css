@@ -63,11 +63,12 @@
 
   .companyLink {
     filter: grayscale(1) brightness(2) contrast(0.4);
-    transition: filter 0.3s;
+    transition: filter 0.2s, transform 0.3s;
   }
 
   .companyLink:hover,
   .companyLink:focus-visible {
     filter: grayscale(0) brightness(1) contrast(1);
+    transform: scale(1.05);
   }
 }

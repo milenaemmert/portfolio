@@ -48,15 +48,16 @@
 }
 
 .contactLink {
-  color: var(--tundora);
+  color: var(--dove-gray);
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   word-break: break-all;
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
-.contactLink:hover {
+.contactLink:hover,
+.contactLink:focus-visible {
   color: var(--mine-shaft);
 }
 

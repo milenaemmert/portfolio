@@ -8,9 +8,9 @@ export const Social = () => {
     <ul className={s.list}>
       {social.map(({ icon, link, title }) => {
         return (
-          <li key={title} className={s.social}>
+          <li key={title}>
             <a
-              className={s.link}
+              className={s.social}
               title={title}
               href={link}
               rel='noopener'
