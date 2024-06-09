@@ -89,7 +89,11 @@ export const TRANSLATIONS = {
   },
   'Sou instrutora de programação com experiência em desenvolvimento front-end e design. Colaboro de forma construtiva e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência dos usuários.':
     {
-      en: "I'm a programming instructor with experience in front-end development and design. I collaborate constructively and creatively in problem-solving, basing my work on data collection and analysis, as well as user experience."
+      en: 'I am a programming instructor with experience in front-end development and design. I collaborate constructively and creatively in all kinds of problem-solving, always basing my work on data collection and analysis and user experience.'
+    },
+  'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e designer. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.':
+    {
+      en: 'Photo of Milena Emmert, who is a programming instructor, developer, and designer. She has blonde hair, and is wearing a beige beret and a burgundy scarf.'
     },
   // MAIN KNOWLEDGE SECTION
   'Design': {

@@ -9,7 +9,14 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
   return (
     <li className={s.projectCard}>
       <div className={s.thumbnailWrapper}>
-        <img className={s.thumbnail} src={thumbnail.src} alt={thumbnail.alt} />
+        <img
+          className={s.thumbnail}
+          src={thumbnail.src}
+          alt={thumbnail.alt}
+          width='420'
+          height='280'
+          loading='lazy'
+        />
       </div>
 
       <h4 className={s.title}>{title}</h4>

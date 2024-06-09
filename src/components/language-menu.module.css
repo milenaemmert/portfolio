@@ -4,9 +4,16 @@
   align-items: center;
 }
 
+.toggle:hover .icon,
+.toggle:focus-visible .icon,
+.isToggleSelected .icon {
+  color: var(--mine-shaft);
+}
+
 .icon {
   width: 32px;
-  color: var(--tundora);
+  color: var(--dove-gray);
+  transition: color 0.2s;
 }
 
 .options {
@@ -17,11 +24,18 @@
 }
 
 .option {
-  color: var(--gray);
+  color: var(--dove-gray);
   font-size: 16px;
   font-weight: 400;
+  transition: color 0.2s;
 }
 
-.selected {
+.option:hover,
+.option:focus-visible {
   color: var(--mine-shaft);
+}
+
+.isOptionSelected {
+  color: var(--mine-shaft);
+  font-weight: 600;
 }

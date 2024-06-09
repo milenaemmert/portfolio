@@ -9,6 +9,14 @@ export const LanguageMenu = () => {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false)
   const { language, setLanguage, t } = useTranslation()
 
+  const toggleClassName = isLanguageMenuOpen
+    ? `${s.toggle} ${s.isToggleSelected}`
+    : `${s.toggle}`
+
+  const toggleTitle = isLanguageMenuOpen
+    ? t('Fechar o menu de idiomas')
+    : t('Abrir o menu de idiomas')
+
   function closeMenu(option) {
     if (language === option) return
 
@@ -41,7 +49,7 @@ export const LanguageMenu = () => {
             {languages.map((option) => {
               const optionClassName =
                 language === option
-                  ? `${s.option} ${s.selected}`
+                  ? `${s.option} ${s.isOptionSelected}`
                   : `${s.option}`
 
               const title = t('Selecionar o idioma')
@@ -67,12 +75,10 @@ export const LanguageMenu = () => {
   return (
     <div className={s.languageMenu}>
       <button
+        className={toggleClassName}
         type='button'
-        title={
-          isLanguageMenuOpen
-            ? t('Fechar o menu de idiomas')
-            : t('Abrir o menu de idiomas')
-        }
+        title={toggleTitle}
+        aria-label={toggleTitle}
         onClick={() => setIsLanguageMenuOpen((current) => !current)}
       >
         {languageIcon(s.icon)}

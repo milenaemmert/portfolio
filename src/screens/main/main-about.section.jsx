@@ -11,12 +11,27 @@ export const MainAboutSection = () => {
   return (
     <section id={ABOUT_ANCHOR} className={s.mainAboutSection}>
       <div className={s.container}>
-        <img className={s.detailLeft} src={detailLeft} alt='' />
-        <img className={s.detailRight} src={detailRight} alt='' />
+        <img
+          className={s.detailLeft}
+          src={detailLeft}
+          alt=''
+          width='224'
+          height='224'
+        />
 
-        <h2 className={s.subtitle}>{t('Dev & Designer')}</h2>
+        <img
+          className={s.detailRight}
+          src={detailRight}
+          alt=''
+          width='68'
+          height='68'
+        />
 
-        <h1 className={s.title}>{t('Milena Emmert')}</h1>
+        <div className={s.headings}>
+          <h1 className={s.title}>{t('Milena Emmert')}</h1>
+
+          <h2 className={s.subtitle}>{t('Dev & Designer')}</h2>
+        </div>
 
         <p className={s.description}>
           {t(
@@ -24,7 +39,15 @@ export const MainAboutSection = () => {
           )}
         </p>
 
-        <img className={s.photo} src={miPhoto} alt='' />
+        <img
+          className={s.photo}
+          src={miPhoto}
+          alt={t(
+            'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e designer. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.'
+          )}
+          width='400'
+          height='360'
+        />
       </div>
     </section>
   )

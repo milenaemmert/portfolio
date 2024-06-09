@@ -6,7 +6,7 @@ export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
     <li className={s.knowledgeCard}>
       <div className={s.iconWrapper}>{icon(s.icon)}</div>
 
-      <h4 className={s.title}>{title}</h4>
+      <h3 className={s.title}>{title}</h3>
 
       <p className={s.description}>{description}</p>
 

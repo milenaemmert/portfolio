@@ -6,13 +6,16 @@ export const MenuToggle = () => {
   const { t } = useTranslation()
   const { isMenuOpen, toggleMenu } = useHeader()
 
+  const title = isMenuOpen
+    ? t('Fechar o menu principal')
+    : t('Abrir o menu principal')
+
   return (
     <button
       className={s.menuToggle}
       type='button'
-      title={
-        isMenuOpen ? t('Fechar o menu principal') : t('Abrir o menu principal')
-      }
+      title={title}
+      aria-label={title}
       onClick={() => toggleMenu()}
     >
       {isMenuOpen ? closeIcon(s.icon) : burgerIcon(s.icon)}

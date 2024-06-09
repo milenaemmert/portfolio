@@ -20,6 +20,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  height: auto;
+}
+
 ol,
 ul {
   list-style: none;

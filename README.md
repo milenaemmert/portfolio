@@ -45,7 +45,16 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Adicionar prop validations nos componentes
 - [x] Adicionar hover nas pills
 - [x] Adicionar hover nas redes sociais
-- [ ] Adicionar aria-labels
+- [x] Adicionar lazy loading nas imagens que estão fora da área crítica
+- [x] Carregar a fonte a partir do html e não do css
+- [x] Adicionar display swap na fonte para que seja utilizado o fallback enquanto ela carrega
+- [x] Adicionar width/height nas imagens para evitar layout shift
+- [x] Melhorar contraste dos itens do nav
+- [x] Melhorar contraste do menu de linguagens
+- [x] Adicionar aria-labels
+- [x] Corrigir ordem dos títulos
+- [x] Adicionar meta descrição
+- [ ] Adicionar links extras nos projetos
 - [ ] Incrementar uso do ESLint
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras

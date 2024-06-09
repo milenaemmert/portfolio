@@ -6,10 +6,13 @@ export const Logo = () => {
   const { t } = useTranslation()
   const { closeMenu } = useHeader()
 
+  const title = t('Ir para o início')
+
   return (
     <a
       className={s.link}
-      title={t('Ir para o início')}
+      title={title}
+      aria-label={title}
       href='#'
       onClick={() => closeMenu()}
     >

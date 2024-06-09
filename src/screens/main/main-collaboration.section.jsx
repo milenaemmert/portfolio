@@ -23,6 +23,7 @@ export const MainCollaborationSection = () => {
               <a
                 className={s.companyLink}
                 title={title}
+                aria-label={title}
                 href={link}
                 rel='noopener'
                 target='_blank'

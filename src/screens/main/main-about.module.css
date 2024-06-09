@@ -28,12 +28,9 @@
   filter: blur(2px);
 }
 
-.subtitle {
-  margin-bottom: 16px;
-  color: var(--tundora);
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
+.headings {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .title {
@@ -44,6 +41,14 @@
   font-weight: 600;
   text-align: center;
   line-height: 1.1;
+}
+
+.subtitle {
+  margin-bottom: 16px;
+  color: var(--tundora);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .description {

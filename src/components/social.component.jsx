@@ -12,6 +12,7 @@ export const Social = () => {
             <a
               className={s.social}
               title={title}
+              aria-label={title}
               href={link}
               rel='noopener'
               target='_blank'
