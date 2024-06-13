@@ -1,4 +1,5 @@
 export const LANGUAGES = {
   PT: 'pt',
-  EN: 'en'
+  EN: 'en',
+  ES: 'es'
 }

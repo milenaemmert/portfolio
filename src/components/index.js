@@ -1,5 +1,6 @@
 export * from './footer.component'
 export * from './header.component'
+export * from './image.component'
 export * from './knowledge-card.component'
 export * from './language-menu.component'
 export * from './logo.component'

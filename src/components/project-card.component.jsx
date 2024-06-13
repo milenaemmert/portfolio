@@ -1,21 +1,25 @@
 import PropTypes from 'prop-types'
 import { chevronIcon } from '../assets/icons'
 import { useTranslation } from '../hooks'
+import { Image } from '../components'
 import s from './project-card.module.css'
 
 export const ProjectCard = ({ thumbnail, title, description, link }) => {
   const { t } = useTranslation()
 
+  const linkTitle = t('Ver projeto')
+
   return (
     <li className={s.projectCard}>
       <div className={s.thumbnailWrapper}>
-        <img
+        <Image
           className={s.thumbnail}
           src={thumbnail.src}
+          fallback={thumbnail.fallback}
           alt={thumbnail.alt}
           width='420'
           height='280'
-          loading='lazy'
+          isLazy
         />
       </div>
 
@@ -25,13 +29,13 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
 
       <a
         className={s.link}
-        title={t('Ver projeto')}
+        title={linkTitle}
         href={link}
         rel='noopener'
         target='_blank'
       >
         {chevronIcon(s.icon)}
-        {t('Ver projeto')}
+        {linkTitle}
       </a>
     </li>
   )
@@ -40,6 +44,7 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
 ProjectCard.propTypes = {
   thumbnail: PropTypes.shape({
     src: PropTypes.string.isRequired,
+    fallback: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired
   }).isRequired,
   title: PropTypes.string.isRequired,

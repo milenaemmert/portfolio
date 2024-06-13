@@ -54,6 +54,10 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Adicionar aria-labels
 - [x] Corrigir ordem dos títulos
 - [x] Adicionar meta descrição
+- [x] Melhorar sistema de linguagens
+- [x] Implementar componente de imagem para poder utilizar webp
+- [x] Adicionar linguagem espanhol
+- [ ] Aumentar espaçamento entre as sessões na versão desktop
 - [ ] Adicionar links extras nos projetos
 - [ ] Incrementar uso do ESLint
 - [ ] Melhorar sistema de ancoragem

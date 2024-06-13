@@ -1,7 +1,11 @@
-import projectIcoThumbnail from '../assets/images/main-projects/project-ico-thumbnail.png'
-import projectHackatonThumbnail from '../assets/images/main-projects/project-hackaton-thumbnail.png'
-import projectHighlightThumbnail from '../assets/images/main-projects/project-highlight-thumbnail.png'
-import projectPrototypeThumbnail from '../assets/images/main-projects/project-prototype-thumbnail.png'
+import projectIcoThumbnail from '../assets/images/main-projects/project-ico-thumbnail.webp'
+import projectIcoThumbnailFallback from '../assets/images/main-projects/project-ico-thumbnail.png'
+import projectHackatonThumbnail from '../assets/images/main-projects/project-hackaton-thumbnail.webp'
+import projectHackatonThumbnailFallback from '../assets/images/main-projects/project-hackaton-thumbnail.png'
+import projectHighlightThumbnail from '../assets/images/main-projects/project-highlight-thumbnail.webp'
+import projectHighlightThumbnailFallback from '../assets/images/main-projects/project-highlight-thumbnail.png'
+import projectPrototypeThumbnail from '../assets/images/main-projects/project-prototype-thumbnail.webp'
+import projectPrototypeThumbnailFallback from '../assets/images/main-projects/project-prototype-thumbnail.png'
 import { useTranslation } from '.'
 
 export const useProjects = () => {
@@ -11,6 +15,7 @@ export const useProjects = () => {
     {
       thumbnail: {
         src: projectIcoThumbnail,
+        fallback: projectIcoThumbnailFallback,
         alt: t(
           'Miniatura mostrando a interface do Projeto ICO, que conta com vários controles para modificar a aparência dos ícones disponíveis na plataforma.'
         )
@@ -24,6 +29,7 @@ export const useProjects = () => {
     {
       thumbnail: {
         src: projectHackatonThumbnail,
+        fallback: projectHackatonThumbnailFallback,
         alt: t('Miniatura mostrando o fluxo de UX criado durante um hackathon.')
       },
       title: t('Hackathon UX/UI'),
@@ -35,6 +41,7 @@ export const useProjects = () => {
     {
       thumbnail: {
         src: projectHighlightThumbnail,
+        fallback: projectHighlightThumbnailFallback,
         alt: t(
           'Miniatura mostrando a interface do editor de código, que conta com a presença do código atual centralizado e algumas opções de personalização ao lado.'
         )
@@ -48,6 +55,7 @@ export const useProjects = () => {
     {
       thumbnail: {
         src: projectPrototypeThumbnail,
+        fallback: projectPrototypeThumbnailFallback,
         alt: t(
           'Miniatura mostrando o fluxo do protótipo de alta fidelidade criado para fins de estudo.'
         )

@@ -1,8 +1,12 @@
-import detailLeft from '../../assets/images/main-about/detail-left.png'
-import detailRight from '../../assets/images/main-about/detail-right.png'
-import miPhoto from '../../assets/images/main-about/mi-photo.png'
+import detailLeft from '../../assets/images/main-about/detail-left.webp'
+import detailLeftFallback from '../../assets/images/main-about/detail-left.png'
+import detailRight from '../../assets/images/main-about/detail-right.webp'
+import detailRightFallback from '../../assets/images/main-about/detail-right.png'
+import mi from '../../assets/images/main-about/mi.webp'
+import miFallback from '../../assets/images/main-about/mi.png'
 import { ABOUT_ANCHOR } from '../../constants'
 import { useTranslation } from '../../hooks'
+import { Image } from '../../components'
 import s from './main-about.module.css'
 
 export const MainAboutSection = () => {
@@ -11,18 +15,18 @@ export const MainAboutSection = () => {
   return (
     <section id={ABOUT_ANCHOR} className={s.mainAboutSection}>
       <div className={s.container}>
-        <img
+        <Image
           className={s.detailLeft}
           src={detailLeft}
-          alt=''
+          fallback={detailLeftFallback}
           width='224'
           height='224'
         />
 
-        <img
+        <Image
           className={s.detailRight}
           src={detailRight}
-          alt=''
+          fallback={detailRightFallback}
           width='68'
           height='68'
         />
@@ -39,9 +43,10 @@ export const MainAboutSection = () => {
           )}
         </p>
 
-        <img
+        <Image
           className={s.photo}
-          src={miPhoto}
+          src={mi}
+          fallback={miFallback}
           alt={t(
             'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e designer. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.'
           )}

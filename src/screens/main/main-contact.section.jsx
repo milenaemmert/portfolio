@@ -27,7 +27,7 @@ export const MainContactSection = () => {
           <div className={s.contactList}>
             <a
               className={s.contactLink}
-              title={t('Me chamar no WhatsApp')}
+              title={t('Chamar no WhatsApp')}
               href='https://wa.me/5551983130810'
               rel='noopener'
               target='_blank'
@@ -37,7 +37,7 @@ export const MainContactSection = () => {
 
             <a
               className={s.contactLink}
-              title={t('Me enviar um email')}
+              title={t('Enviar um email')}
               href='mailto:milena.emmert@outlook.com'
               rel='noopener'
               target='_blank'

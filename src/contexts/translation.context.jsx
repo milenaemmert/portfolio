@@ -8,11 +8,13 @@ export const TranslationProvider = ({ children }) => {
   const [language, setLanguage] = useState(getBrowserLanguage())
 
   function getBrowserLanguage() {
-    if (navigator.language?.includes(LANGUAGES.EN)) {
-      return LANGUAGES.EN
-    }
+    const browserLanguage = navigator.language
 
-    return LANGUAGES.PT
+    const defaultLanguage = Object.values(LANGUAGES).find((lang) =>
+      browserLanguage?.includes(lang)
+    )
+
+    return defaultLanguage || LANGUAGES.PT
   }
 
   function handleTranslation(text) {
