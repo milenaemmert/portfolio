@@ -6,8 +6,8 @@ import {
   globoLogo,
   zenviaLogo,
   algarLogo
-} from '../assets/icons'
-import { useTranslation } from '.'
+} from '@assets/icons'
+import { useTranslation } from '@hooks'
 
 export const useCompanies = () => {
   const { t } = useTranslation()

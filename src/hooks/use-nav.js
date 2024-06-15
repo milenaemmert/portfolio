@@ -4,8 +4,8 @@ import {
   PROJECTS_ANCHOR,
   COLLABORATION_ANCHOR,
   CONTACT_ANCHOR
-} from '../constants'
-import { useTranslation } from '.'
+} from '@constants'
+import { useTranslation } from '@hooks'
 
 export const useNav = () => {
   const { t } = useTranslation()

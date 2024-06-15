@@ -26,6 +26,10 @@
 }
 
 @media screen and (min-width: 769px) {
+  .mainProjectsSection {
+    padding: 64px 0;
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -33,7 +37,7 @@
 
 @media screen and (min-width: 1025px) {
   .mainProjectsSection {
-    padding: 64px 0;
+    padding: 80px 0;
   }
 
   .projects {

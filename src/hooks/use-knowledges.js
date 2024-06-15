@@ -1,5 +1,5 @@
-import { designIcon, developmentIcon, dataAnalysisIcon } from '../assets/icons'
-import { useTranslation } from '.'
+import { designIcon, developmentIcon, dataAnalysisIcon } from '@assets/icons'
+import { useTranslation } from '@hooks'
 
 export const useKnowledges = () => {
   const { t } = useTranslation()

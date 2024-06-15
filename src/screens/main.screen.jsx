@@ -4,7 +4,7 @@ import {
   MainProjectsSection,
   MainCollaborationSection,
   MainContactSection
-} from '.'
+} from '@screens'
 import s from './main.module.css'
 
 export const MainScreen = () => {

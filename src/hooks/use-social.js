@@ -5,8 +5,8 @@ import {
   linkedinIcon,
   devIcon,
   notionIcon
-} from '../assets/icons'
-import { useTranslation } from '.'
+} from '@assets/icons'
+import { useTranslation } from '@hooks'
 
 export const useSocial = () => {
   const { t } = useTranslation()

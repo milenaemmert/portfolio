@@ -57,9 +57,11 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Melhorar sistema de linguagens
 - [x] Implementar componente de imagem para poder utilizar webp
 - [x] Adicionar linguagem espanhol
-- [ ] Aumentar espaçamento entre as sessões na versão desktop
+- [x] Aumentar espaçamento entre as sessões gradativamente nos breakpoints
+- [x] Incrementar regras do ESLint
+- [x] Utilizar absolute imports
+- [x] Utilizar self-hosted fonts
 - [ ] Adicionar links extras nos projetos
-- [ ] Incrementar uso do ESLint
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras
 - [ ] Tentar transformar languages em hook

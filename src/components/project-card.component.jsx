@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import { chevronIcon } from '../assets/icons'
-import { useTranslation } from '../hooks'
-import { Image } from '../components'
+import { chevronIcon } from '@assets/icons'
+import { useTranslation } from '@hooks'
+import { Image } from '@components'
 import s from './project-card.module.css'
 
 export const ProjectCard = ({ thumbnail, title, description, link }) => {

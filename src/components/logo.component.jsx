@@ -1,5 +1,5 @@
-import { miLogo } from '../assets/icons'
-import { useTranslation, useHeader } from '../hooks'
+import { miLogo } from '@assets/icons'
+import { useTranslation, useHeader } from '@hooks'
 import s from './logo.module.css'
 
 export const Logo = () => {

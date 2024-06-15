@@ -1,4 +1,4 @@
-import { useSocial } from '../hooks'
+import { useSocial } from '@hooks'
 import s from './social.module.css'
 
 export const Social = () => {

@@ -1,5 +1,5 @@
-import { useHeader, useNav } from '../hooks'
-import { Social } from '.'
+import { useHeader, useNav } from '@hooks'
+import { Social } from '@components'
 import s from './menu.module.css'
 
 export const Menu = () => {

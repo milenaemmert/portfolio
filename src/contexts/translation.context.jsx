@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 import PropTypes from 'prop-types'
-import { TRANSLATIONS, LANGUAGES } from '../constants'
+import { TRANSLATIONS, LANGUAGES } from '@constants'
 
 export const TranslationContext = createContext()
 

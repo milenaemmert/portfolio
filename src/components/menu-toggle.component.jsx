@@ -1,5 +1,5 @@
-import { burgerIcon, closeIcon } from '../assets/icons'
-import { useTranslation, useHeader } from '../hooks'
+import { burgerIcon, closeIcon } from '@assets/icons'
+import { useTranslation, useHeader } from '@hooks'
 import s from './menu-toggle.module.css'
 
 export const MenuToggle = () => {

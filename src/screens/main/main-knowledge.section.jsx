@@ -1,7 +1,7 @@
-import { KNOWLEDGE_ANCHOR } from '../../constants'
-import { useKnowledges } from '../../hooks'
-import { KnowledgeCard } from '../../components'
+import { KNOWLEDGE_ANCHOR } from '@constants'
+import { KnowledgeCard } from '@components'
 import s from './main-knowledge.module.css'
+import { useKnowledges } from '@hooks'
 
 export const MainKnowledgeSection = () => {
   const knowledges = useKnowledges()

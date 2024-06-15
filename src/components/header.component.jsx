@@ -1,8 +1,8 @@
 import FocusTrap from 'focus-trap-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { chevronIcon } from '../assets/icons'
-import { useHeader, useBreakpoint, useNav } from '../hooks'
-import { Logo, LanguageMenu, MenuToggle, Menu } from '.'
+import { chevronIcon } from '@assets/icons'
+import { useHeader, useBreakpoint, useNav } from '@hooks'
+import { Logo, LanguageMenu, MenuToggle, Menu } from '@components'
 import s from './header.module.css'
 
 export const Header = () => {

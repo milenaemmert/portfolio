@@ -1,4 +1,4 @@
-import { useTranslation, useBreakpoint } from '../hooks'
+import { useTranslation, useBreakpoint } from '@hooks'
 import s from './footer.module.css'
 
 export const Footer = () => {

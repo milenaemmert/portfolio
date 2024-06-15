@@ -1,6 +1,6 @@
-import { CONTACT_ANCHOR } from '../../constants'
-import { useTranslation } from '../../hooks'
-import { Logo, Social } from '../../components'
+import { CONTACT_ANCHOR } from '@constants'
+import { useTranslation } from '@hooks'
+import { Logo, Social } from '@components'
 import s from './main-contact.module.css'
 
 export const MainContactSection = () => {

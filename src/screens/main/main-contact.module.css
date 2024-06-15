@@ -62,6 +62,10 @@
 }
 
 @media screen and (min-width: 769px) {
+  .mainContactSection {
+    padding: 64px 0;
+  }
+
   .container {
     flex-direction: row;
     justify-content: space-around;
@@ -88,6 +92,6 @@
 
 @media screen and (min-width: 1025px) {
   .mainContactSection {
-    padding: 64px 0;
+    padding: 80px 0;
   }
 }

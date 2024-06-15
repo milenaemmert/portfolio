@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { languageIcon } from '../assets/icons'
-import { LANGUAGES } from '../constants'
-import { useTranslation } from '../hooks'
+import { languageIcon } from '@assets/icons'
+import { LANGUAGES } from '@constants'
+import { useTranslation } from '@hooks'
 import s from './language-menu.module.css'
 
 export const LanguageMenu = () => {

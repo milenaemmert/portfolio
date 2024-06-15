@@ -1,5 +1,5 @@
-import { COLLABORATION_ANCHOR } from '../../constants'
-import { useTranslation, useCompanies } from '../../hooks'
+import { COLLABORATION_ANCHOR } from '@constants'
+import { useTranslation, useCompanies } from '@hooks'
 import s from './main-collaboration.module.css'
 
 export const MainCollaborationSection = () => {
@@ -19,7 +19,7 @@ export const MainCollaborationSection = () => {
 
         <ul className={s.companies}>
           {companies.map(({ logo, link, title }) => (
-            <li key={title} className={s.company}>
+            <li key={title}>
               <a
                 className={s.companyLink}
                 title={title}

@@ -67,6 +67,10 @@
 }
 
 @media screen and (min-width: 769px) {
+  .mainAboutSection {
+    padding: calc(64px + var(--header-height)) 0 64px;
+  }
+
   .detailRight {
     right: 64px;
   }
@@ -78,7 +82,7 @@
 
 @media screen and (min-width: 1025px) {
   .mainAboutSection {
-    padding: calc(64px + var(--header-height)) 0 64px;
+    padding: calc(80px + var(--header-height)) 0 80px;
   }
 
   .detailLeft {
