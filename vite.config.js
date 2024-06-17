@@ -4,5 +4,5 @@ import jsconfigPaths from 'vite-jsconfig-paths'
 import eslint from 'vite-plugin-eslint'
 
 export default defineConfig({
-  plugins: [react(), jsconfigPaths(), eslint({ lintOnStart: true, include: ["src/*/.js", "src/*/.jsx"] })]
+  plugins: [react(), jsconfigPaths(), eslint({ lintOnStart: true })]
 })
