@@ -1,5 +1,7 @@
 import ReactDOM from 'react-dom/client'
-import { TranslationProvider, HeaderProvider } from './contexts'
+
+import { HeaderProvider, TranslationProvider } from '@contexts'
+
 import { App } from './app'
 import './assets/style/global.css'
 

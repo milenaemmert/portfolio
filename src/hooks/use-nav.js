@@ -1,9 +1,9 @@
 import {
   ABOUT_ANCHOR,
-  KNOWLEDGE_ANCHOR,
-  PROJECTS_ANCHOR,
   COLLABORATION_ANCHOR,
-  CONTACT_ANCHOR
+  CONTACT_ANCHOR,
+  KNOWLEDGE_ANCHOR,
+  PROJECTS_ANCHOR
 } from '@constants'
 import { useTranslation } from '@hooks'
 

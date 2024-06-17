@@ -1,10 +1,11 @@
 import {
   MainAboutSection,
-  MainKnowledgeSection,
-  MainProjectsSection,
   MainCollaborationSection,
-  MainContactSection
+  MainContactSection,
+  MainKnowledgeSection,
+  MainProjectsSection
 } from '@screens'
+
 import s from './main.module.css'
 
 export const MainScreen = () => {

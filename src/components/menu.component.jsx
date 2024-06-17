@@ -1,5 +1,6 @@
-import { useHeader, useNav } from '@hooks'
 import { Social } from '@components'
+import { useHeader, useNav } from '@hooks'
+
 import s from './menu.module.css'
 
 export const Menu = () => {
@@ -19,8 +20,8 @@ export const Menu = () => {
                 <li key={id}>
                   <a
                     className={navLinkClassName}
-                    title={title}
                     href={anchor}
+                    title={title}
                     onClick={() => selectNavLink(id)}
                   >
                     {name}

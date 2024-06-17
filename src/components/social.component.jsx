@@ -1,4 +1,5 @@
 import { useSocial } from '@hooks'
+
 import s from './social.module.css'
 
 export const Social = () => {
@@ -10,12 +11,12 @@ export const Social = () => {
         return (
           <li key={title}>
             <a
-              className={s.social}
-              title={title}
               aria-label={title}
+              className={s.social}
               href={link}
-              rel='noopener'
+              rel='noreferrer'
               target='_blank'
+              title={title}
             >
               {icon(s.icon)}
             </a>

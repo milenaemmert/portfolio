@@ -1,13 +1,13 @@
+import { useTranslation } from '@hooks'
 import {
-  boticarioLogo,
+  algarLogo,
   aluraLogo,
   ambevLogo,
-  suzanoLogo,
+  boticarioLogo,
   globoLogo,
-  zenviaLogo,
-  algarLogo
-} from '@assets/icons'
-import { useTranslation } from '@hooks'
+  suzanoLogo,
+  zenviaLogo
+} from '@icons'
 
 export const useCompanies = () => {
   const { t } = useTranslation()

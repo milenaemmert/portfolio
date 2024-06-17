@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 const BREAKPOINT = {
   MOBILE: 'MOBILE',
@@ -12,19 +12,7 @@ const BREAKPOINT_SIZE = {
 }
 
 export const useBreakpoint = () => {
-  const [breakpoint, setBreakpoint] = useState(getBreakpoint())
-
-  useEffect(() => {
-    function handleResize() {
-      setBreakpoint(getBreakpoint())
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
-
-  function getBreakpoint() {
+  const getBreakpoint = () => {
     const currentWidth = window.innerWidth
 
     if (currentWidth <= BREAKPOINT_SIZE.MOBILE) {
@@ -35,6 +23,18 @@ export const useBreakpoint = () => {
       return BREAKPOINT.DESKTOP
     }
   }
+
+  const [breakpoint, setBreakpoint] = useState(getBreakpoint())
+
+  useEffect(() => {
+    const handleResize = () => {
+      setBreakpoint(getBreakpoint())
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   return {
     isMobile: breakpoint === BREAKPOINT.MOBILE,

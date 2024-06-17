@@ -1,9 +1,9 @@
 export const useScrollLock = () => {
-  function lockScroll() {
+  const lockScroll = () => {
     document.body.style.overflow = 'hidden'
   }
 
-  function unlockScroll() {
+  const unlockScroll = () => {
     document.body.style.overflow = 'initial'
   }
 

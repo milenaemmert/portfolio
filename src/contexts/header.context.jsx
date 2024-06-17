@@ -1,6 +1,7 @@
-import { createContext, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types'
-import { useBreakpoint, useScrollLock, useNav } from '@hooks'
+import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
+
+import { useBreakpoint, useNav, useScrollLock } from '@hooks'
 
 export const HeaderContext = createContext()
 
@@ -19,38 +20,43 @@ export const HeaderProvider = ({ children }) => {
   }, [isMenuOpen, unlockScroll])
 
   useEffect(() => {
-    closeMenu()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isDesktop])
+    if (!isDesktop) return
 
-  function openMenu() {
+    closeMenu()
+  }, [isDesktop, closeMenu])
+
+  const openMenu = useCallback(() => {
     if (isMenuOpen) return
 
     setIsMenuOpen(true)
     lockScroll()
-  }
+  }, [isMenuOpen, lockScroll])
 
-  function toggleMenu() {
+  const toggleMenu = useCallback(() => {
     isMenuOpen ? closeMenu() : openMenu()
-  }
+  }, [isMenuOpen, openMenu, closeMenu])
 
-  function selectNavLink(id) {
-    closeMenu()
-    setNavLink(id)
-  }
+  const selectNavLink = useCallback(
+    (id) => {
+      closeMenu()
+      setNavLink(id)
+    },
+    [closeMenu]
+  )
+
+  const value = useMemo(
+    () => ({
+      isMenuOpen,
+      navLink,
+      closeMenu,
+      toggleMenu,
+      selectNavLink
+    }),
+    [isMenuOpen, navLink, closeMenu, toggleMenu, selectNavLink]
+  )
 
   return (
-    <HeaderContext.Provider
-      value={{
-        isMenuOpen,
-        navLink,
-        closeMenu,
-        toggleMenu,
-        selectNavLink
-      }}
-    >
-      {children}
-    </HeaderContext.Provider>
+    <HeaderContext.Provider value={value}>{children}</HeaderContext.Provider>
   )
 }
 

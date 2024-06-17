@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+import s from './image.module.css'
+
 export const Image = ({
   className,
   src,
@@ -9,28 +11,30 @@ export const Image = ({
   height,
   isLazy = false
 }) => {
+  const imageClassName = className ? `${className} ${s.image}` : s.image
+
   return (
-    <picture>
+    <picture className={s.wrapper}>
       <source srcSet={src} type='image/webp' />
 
       <img
-        className={className}
+        alt={alt}
+        className={imageClassName}
+        height={height}
         loading={isLazy ? 'lazy' : undefined}
         src={fallback}
-        alt={alt}
         width={width}
-        height={height}
       />
     </picture>
   )
 }
 
 Image.propTypes = {
-  className: PropTypes.string,
-  src: PropTypes.string.isRequired,
-  fallback: PropTypes.string.isRequired,
   alt: PropTypes.string,
-  width: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  fallback: PropTypes.string.isRequired,
   height: PropTypes.string.isRequired,
-  isLazy: PropTypes.bool
+  isLazy: PropTypes.bool,
+  src: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired
 }

@@ -1,13 +1,14 @@
+import { Logo, Social } from '@components'
 import { CONTACT_ANCHOR } from '@constants'
 import { useTranslation } from '@hooks'
-import { Logo, Social } from '@components'
+
 import s from './main-contact.module.css'
 
 export const MainContactSection = () => {
   const { t } = useTranslation()
 
   return (
-    <section id={CONTACT_ANCHOR} className={s.mainContactSection}>
+    <section className={s.mainContactSection} id={CONTACT_ANCHOR}>
       <div className={s.container}>
         <div className={s.social}>
           <Logo />
@@ -27,20 +28,20 @@ export const MainContactSection = () => {
           <div className={s.contactList}>
             <a
               className={s.contactLink}
-              title={t('Chamar no WhatsApp')}
               href='https://wa.me/5551983130810'
-              rel='noopener'
+              rel='noreferrer'
               target='_blank'
+              title={t('Chamar no WhatsApp')}
             >
               {t('+55 51 98313-0810')}
             </a>
 
             <a
               className={s.contactLink}
-              title={t('Enviar um email')}
               href='mailto:milena.emmert@outlook.com'
-              rel='noopener'
+              rel='noreferrer'
               target='_blank'
+              title={t('Enviar um email')}
             >
               {t('milena.emmert@outlook.com')}
             </a>

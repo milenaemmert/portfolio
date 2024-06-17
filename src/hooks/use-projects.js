@@ -1,12 +1,13 @@
-import projectIcoThumbnail from '@assets/images/main-projects/project-ico-thumbnail.webp'
-import projectIcoThumbnailFallback from '@assets/images/main-projects/project-ico-thumbnail.png'
-import projectHackatonThumbnail from '@assets/images/main-projects/project-hackaton-thumbnail.webp'
-import projectHackatonThumbnailFallback from '@assets/images/main-projects/project-hackaton-thumbnail.png'
-import projectHighlightThumbnail from '@assets/images/main-projects/project-highlight-thumbnail.webp'
-import projectHighlightThumbnailFallback from '@assets/images/main-projects/project-highlight-thumbnail.png'
-import projectPrototypeThumbnail from '@assets/images/main-projects/project-prototype-thumbnail.webp'
-import projectPrototypeThumbnailFallback from '@assets/images/main-projects/project-prototype-thumbnail.png'
-import { useTranslation } from '.'
+import projectHackatonThumbnailFallback from '@images/main-projects/project-hackaton-thumbnail.png'
+import projectHackatonThumbnail from '@images/main-projects/project-hackaton-thumbnail.webp'
+import projectHighlightThumbnailFallback from '@images/main-projects/project-highlight-thumbnail.png'
+import projectHighlightThumbnail from '@images/main-projects/project-highlight-thumbnail.webp'
+import projectIcoThumbnailFallback from '@images/main-projects/project-ico-thumbnail.png'
+import projectIcoThumbnail from '@images/main-projects/project-ico-thumbnail.webp'
+import projectPrototypeThumbnailFallback from '@images/main-projects/project-prototype-thumbnail.png'
+import projectPrototypeThumbnail from '@images/main-projects/project-prototype-thumbnail.webp'
+
+import { useTranslation } from '@hooks'
 
 export const useProjects = () => {
   const { t } = useTranslation()

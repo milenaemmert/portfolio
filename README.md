@@ -61,6 +61,8 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Incrementar regras do ESLint
 - [x] Utilizar absolute imports
 - [x] Utilizar self-hosted fonts
+- [x] Fix image component
+- [x] Fix para todos os erros e warnings reportados pelas novas regras do ESLint
 - [ ] Adicionar links extras nos projetos
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras

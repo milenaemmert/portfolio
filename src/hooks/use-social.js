@@ -1,12 +1,12 @@
+import { useTranslation } from '@hooks'
 import {
   behanceIcon,
-  youtubeIcon,
+  devIcon,
   githubIcon,
   linkedinIcon,
-  devIcon,
-  notionIcon
-} from '@assets/icons'
-import { useTranslation } from '@hooks'
+  notionIcon,
+  youtubeIcon
+} from '@icons'
 
 export const useSocial = () => {
   const { t } = useTranslation()

@@ -1,5 +1,6 @@
-import { burgerIcon, closeIcon } from '@assets/icons'
-import { useTranslation, useHeader } from '@hooks'
+import { useHeader, useTranslation } from '@hooks'
+import { burgerIcon, closeIcon } from '@icons'
+
 import s from './menu-toggle.module.css'
 
 export const MenuToggle = () => {
@@ -12,10 +13,10 @@ export const MenuToggle = () => {
 
   return (
     <button
-      className={s.menuToggle}
-      type='button'
-      title={title}
       aria-label={title}
+      className={s.menuToggle}
+      title={title}
+      type='button'
       onClick={() => toggleMenu()}
     >
       {isMenuOpen ? closeIcon(s.icon) : burgerIcon(s.icon)}

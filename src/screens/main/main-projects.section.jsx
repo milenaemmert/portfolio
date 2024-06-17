@@ -1,6 +1,7 @@
-import { useProjects, useTranslation } from '@hooks'
-import { PROJECTS_ANCHOR } from '@constants'
 import { ProjectCard } from '@components'
+import { PROJECTS_ANCHOR } from '@constants'
+import { useProjects, useTranslation } from '@hooks'
+
 import s from './main-projects.module.css'
 
 export const MainProjectsSection = () => {

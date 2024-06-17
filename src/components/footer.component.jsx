@@ -1,11 +1,12 @@
-import { useTranslation, useBreakpoint } from '@hooks'
+import { useBreakpoint, useTranslation } from '@hooks'
+
 import s from './footer.module.css'
 
 export const Footer = () => {
   const { t } = useTranslation()
   const { isMobile } = useBreakpoint()
 
-  function renderContent() {
+  const renderContent = () => {
     const year = t('© 2024')
     const developer = t('Design e desenvolvimento por Milena Emmert')
     const copyright = t('Todos os direitos reservados.')

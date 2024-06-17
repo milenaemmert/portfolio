@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
-import { chevronIcon } from '@assets/icons'
-import { useTranslation } from '@hooks'
+
 import { Image } from '@components'
+import { useTranslation } from '@hooks'
+import { chevronIcon } from '@icons'
+
 import s from './project-card.module.css'
 
 export const ProjectCard = ({ thumbnail, title, description, link }) => {
@@ -13,13 +15,13 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
     <li className={s.projectCard}>
       <div className={s.thumbnailWrapper}>
         <Image
-          className={s.thumbnail}
-          src={thumbnail.src}
-          fallback={thumbnail.fallback}
-          alt={thumbnail.alt}
-          width='420'
-          height='280'
           isLazy
+          alt={thumbnail.alt}
+          className={s.thumbnail}
+          fallback={thumbnail.fallback}
+          height='280'
+          src={thumbnail.src}
+          width='420'
         />
       </div>
 
@@ -29,10 +31,10 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
 
       <a
         className={s.link}
-        title={linkTitle}
         href={link}
-        rel='noopener'
+        rel='noreferrer'
         target='_blank'
+        title={linkTitle}
       >
         {chevronIcon(s.icon)}
         {linkTitle}
@@ -42,12 +44,12 @@ export const ProjectCard = ({ thumbnail, title, description, link }) => {
 }
 
 ProjectCard.propTypes = {
-  thumbnail: PropTypes.shape({
-    src: PropTypes.string.isRequired,
-    fallback: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired
-  }).isRequired,
-  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired
+  link: PropTypes.string.isRequired,
+  thumbnail: PropTypes.shape({
+    alt: PropTypes.string.isRequired,
+    fallback: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired
+  }).isRequired,
+  title: PropTypes.string.isRequired
 }

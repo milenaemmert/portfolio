@@ -1,8 +1,10 @@
 import FocusTrap from 'focus-trap-react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { chevronIcon } from '@assets/icons'
-import { useHeader, useBreakpoint, useNav } from '@hooks'
-import { Logo, LanguageMenu, MenuToggle, Menu } from '@components'
+import { AnimatePresence, motion } from 'framer-motion'
+
+import { LanguageMenu, Logo, Menu, MenuToggle } from '@components'
+import { useBreakpoint, useHeader, useNav } from '@hooks'
+import { chevronIcon } from '@icons'
+
 import s from './header.module.css'
 
 export const Header = () => {
@@ -12,7 +14,7 @@ export const Header = () => {
 
   const headerClassName = isMenuOpen ? `${s.header} ${s.isMenuOpen}` : s.header
 
-  function renderNav() {
+  const renderNav = () => {
     if (!isDesktop) return
 
     return (
@@ -23,19 +25,19 @@ export const Header = () => {
               navLink === id ? `${s.navLink} ${s.isNavLinkActive}` : s.navLink
 
             return (
-              <li key={id} className={s.navItem}>
+              <li className={s.navItem} key={id}>
                 <a
                   className={navLinkClassName}
-                  title={title}
                   href={anchor}
+                  title={title}
                   onClick={() => selectNavLink(id)}
                 >
                   <AnimatePresence>
                     {navLink === id && (
                       <motion.div
-                        initial={{ width: 0, marginRight: 0 }}
                         animate={{ width: 14, marginRight: 4 }}
                         exit={{ width: 0, marginRight: 0 }}
+                        initial={{ width: 0, marginRight: 0 }}
                         transition={{
                           width: { duration: 0.4, ease: 'easeInOut' },
                           marginRight: { duration: 0.8, ease: 'easeOut' }
@@ -74,18 +76,18 @@ export const Header = () => {
         </div>
 
         <AnimatePresence>
-          {isMenuOpen && (
+          {!!isMenuOpen && (
             <motion.div
-              className={s.menu}
-              initial={{ opacity: 0, x: '-100%' }}
               animate={{
                 opacity: 1,
                 x: 0
               }}
+              className={s.menu}
               exit={{
                 opacity: 0,
                 x: '-100%'
               }}
+              initial={{ opacity: 0, x: '-100%' }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
             >
               <Menu />

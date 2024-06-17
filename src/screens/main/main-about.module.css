@@ -71,7 +71,13 @@
     padding: calc(64px + var(--header-height)) 0 64px;
   }
 
+  .detailLeft {
+    top: 48px;
+    left: -72px;
+  }
+
   .detailRight {
+    top: -52px;
     right: 64px;
   }
 
@@ -86,12 +92,11 @@
   }
 
   .detailLeft {
-    top: 48px;
-    left: -72px;
+    top: 32px;
   }
 
   .detailRight {
-    top: -52px;
+    top: -68px;
   }
 
   .description {

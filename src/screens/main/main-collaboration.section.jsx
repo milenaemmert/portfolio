@@ -1,5 +1,6 @@
 import { COLLABORATION_ANCHOR } from '@constants'
-import { useTranslation, useCompanies } from '@hooks'
+import { useCompanies, useTranslation } from '@hooks'
+
 import s from './main-collaboration.module.css'
 
 export const MainCollaborationSection = () => {
@@ -7,7 +8,7 @@ export const MainCollaborationSection = () => {
   const companies = useCompanies()
 
   return (
-    <section id={COLLABORATION_ANCHOR} className={s.mainCollaborationSection}>
+    <section className={s.mainCollaborationSection} id={COLLABORATION_ANCHOR}>
       <div className={s.container}>
         <h3 className={s.title}>{t('Colaboração')}</h3>
 
@@ -21,12 +22,12 @@ export const MainCollaborationSection = () => {
           {companies.map(({ logo, link, title }) => (
             <li key={title}>
               <a
-                className={s.companyLink}
-                title={title}
                 aria-label={title}
+                className={s.companyLink}
                 href={link}
-                rel='noopener'
+                rel='noreferrer'
                 target='_blank'
+                title={title}
               >
                 {logo(s.companyLogo)}
               </a>

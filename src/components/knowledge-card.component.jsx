@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+
 import s from './knowledge-card.module.css'
 
 export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
@@ -15,10 +16,10 @@ export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
           <li key={name}>
             <a
               className={s.pill}
-              title={name}
               href={link}
-              rel='noopener'
+              rel='noreferrer'
               target='_blank'
+              title={name}
             >
               {name}
             </a>
@@ -30,13 +31,13 @@ export const KnowledgeCard = ({ icon, title, description, knowledges }) => {
 }
 
 KnowledgeCard.propTypes = {
-  icon: PropTypes.func.isRequired,
-  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  icon: PropTypes.func.isRequired,
   knowledges: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      link: PropTypes.string.isRequired
+      link: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  title: PropTypes.string.isRequired
 }

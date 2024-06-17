@@ -1,6 +1,7 @@
 import { clarity } from 'react-microsoft-clarity'
-import { MainScreen } from './screens'
-import { Header, Footer } from './components'
+
+import { Footer, Header } from '@components'
+import { MainScreen } from '@screens'
 
 export const App = () => {
   if (import.meta.env.PROD) clarity.init('moi8lh6bse')

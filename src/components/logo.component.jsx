@@ -1,5 +1,6 @@
-import { miLogo } from '@assets/icons'
-import { useTranslation, useHeader } from '@hooks'
+import { useHeader, useTranslation } from '@hooks'
+import { miLogo } from '@icons'
+
 import s from './logo.module.css'
 
 export const Logo = () => {
@@ -10,10 +11,10 @@ export const Logo = () => {
 
   return (
     <a
-      className={s.link}
-      title={title}
       aria-label={title}
+      className={s.link}
       href='#'
+      title={title}
       onClick={() => closeMenu()}
     >
       {miLogo(s.logo)}
