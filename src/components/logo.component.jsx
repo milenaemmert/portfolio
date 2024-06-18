@@ -1,3 +1,4 @@
+import { ABOUT_ANCHOR } from '@constants'
 import { useHeader, useTranslation } from '@hooks'
 import { miLogo } from '@icons'
 
@@ -13,7 +14,7 @@ export const Logo = () => {
     <a
       aria-label={title}
       className={s.link}
-      href='#'
+      href={`#${ABOUT_ANCHOR}`}
       title={title}
       onClick={() => closeMenu()}
     >

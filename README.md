@@ -63,6 +63,9 @@ Você pode acessar o meu portfólio clicando [aqui](https://www.milenaemmert.com
 - [x] Utilizar self-hosted fonts
 - [x] Fix image component
 - [x] Fix para todos os erros e warnings reportados pelas novas regras do ESLint
+- [x] Aumentar imagem do detalhe da direita para 88x88
+- [x] Incrementar ESLint com regras de acessibilidade
+- [x] Utilizar plugin-legacy para resolver problemas de js legado em navegadores modernos
 - [ ] Adicionar links extras nos projetos
 - [ ] Melhorar sistema de ancoragem
 - [ ] Investigar como traduzir âncoras
