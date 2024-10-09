@@ -41,7 +41,7 @@ export const MainAboutSection = () => {
 
         <p className={s.description}>
           {t(
-            'Sou analista de dados, instrutora e tenho experiência como dev front-end com conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência do usuário.'
+            'Sou analista de dados, instrutora e tenho experiência como dev front-end e conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência do usuário.'
           )}
         </p>
 
