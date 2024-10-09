@@ -103,32 +103,32 @@ export const TRANSLATIONS = {
     es: 'Todos los derechos reservados.'
   },
   // MAIN ABOUT SECTION
-  'Dev & Designer': {
-    en: 'Dev & Designer',
-    es: 'Dev & Designer'
+  'Dev & Analista de Dados': {
+    en: 'Dev & Data Analyst',
+    es: 'Dev & Analista de Datos'
   },
   'Milena Emmert': {
     en: 'Milena Emmert',
     es: 'Milena Emmert'
   },
-  'Sou instrutora de programação com experiência em desenvolvimento front-end e design. Colaboro de forma construtiva e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência dos usuários.':
+  'Sou analista de dados, instrutora e tenho experiência como dev front-end com conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência do usuário.':
     {
-      en: 'I am a programming instructor with experience in front-end development and design. I collaborate constructively and creatively in all kinds of problem-solving, always basing my work on data collection and analysis and user experience.',
-      es: 'Soy instructora de programación con experiencia en desarrollo front-end y diseño. Colaboro de manera constructiva y creativa en la resolución de problemas, fundamentando mi trabajo en la recolección y análisis de datos, así como en la experiencia de los usuarios.'
+      en: 'I am a data analyst and instructor with experience as a front-end developer and knowledge in design. These skills allow me to collaborate both analytically and creatively in problem-solving, basing my work on data collection and analysis, as well as user experience.',
+      es: 'Soy analista de datos e instructora con experiencia como desarrolladora front-end y conocimientos en diseño. Estas habilidades me permiten colaborar de manera analítica y creativa en la resolución de problemas, basando mi trabajo en la recopilación y análisis de datos y en la experiencia de los usuarios.'
     },
-  'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e designer. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.':
+  'Foto da Milena Emmert, que é analista de dados, instrutora e desenvolvedora. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.':
     {
-      en: 'Photo of Milena Emmert, who is a programming instructor, developer, and designer. She has blonde hair, and is wearing a beige beret and a burgundy scarf.',
-      es: 'Foto de Milena Emmert, quien es instructora de programación, desarrolladora y diseñadora. Tiene cabello rubio, lleva una boina beige y una bufanda burdeos.'
+      en: 'Photo of Milena Emmert, who is a data analyst, instructor and developer. She has blonde hair, and is wearing a beige beret and a burgundy scarf.',
+      es: 'Foto de Milena Emmert, quien es analista de datos, instructora y desarrolladora. Tiene cabello rubio, lleva una boina beige y una bufanda burdeos.'
     },
   // MAIN KNOWLEDGE SECTION
   'Design': {
     en: 'Design',
     es: 'Diseño'
   },
-  'A criatividade faz parte da minha personalidade. Mas, para além do visual, meus projetos também costumam ser alinhados com as melhores práticas de UX.':
+  'A criatividade faz parte da minha personalidade. Mas, para além do visual, meus projetos também são alinhados com as melhores práticas de UX.':
     {
-      en: 'Creativity is part of my personality. However, beyond the visual aspect, my projects are also usually aligned with the best UX practices.',
+      en: 'Creativity is part of my personality. However, beyond the visual aspect, my projects are also aligned with the best UX practices.',
       es: 'La creatividad es parte de mi personalidad. Pero además del aspecto visual, mis proyectos también están alineados con las mejores prácticas de UX.'
     },
   'UI/UX': {
@@ -192,7 +192,7 @@ export const TRANSLATIONS = {
     en: 'Data Analysis',
     es: 'Análisis de Datos'
   },
-  'Os dados nos guiam e nos levam a lugares impensáveis. Por isso, as decisões que tomo em meu trabalho partem da coleta, análise e tratamento de dados.':
+  'Os dados nos guiam. Por isso as decisões que tomo partem da coleta, análise, tratamento e compartilhamento de dados, seguindo o processo de ETL.':
     {
       en: 'Data guides us and takes us to unimaginable places. The decisions I make in my work are based on data collection, analysis and processing.',
       es: 'Los datos nos guían y nos llevan a lugares inimaginables. Por eso, las decisiones que tomo en mi trabajo parten de la recolección, análisis y tratamiento de datos.'

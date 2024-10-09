@@ -36,18 +36,18 @@ export const MainAboutSection = () => {
         <div className={s.headings}>
           <h1 className={s.title}>{t('Milena Emmert')}</h1>
 
-          <h2 className={s.subtitle}>{t('Dev & Designer')}</h2>
+          <h2 className={s.subtitle}>{t('Dev & Analista de Dados')}</h2>
         </div>
 
         <p className={s.description}>
           {t(
-            'Sou instrutora de programação com experiência em desenvolvimento front-end e design. Colaboro de forma construtiva e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência dos usuários.'
+            'Sou analista de dados, instrutora e tenho experiência como dev front-end com conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência do usuário.'
           )}
         </p>
 
         <Image
           alt={t(
-            'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e designer. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.'
+            'Foto da Milena Emmert, que é instrutora de programação, desenvolvedora e analista de dados. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.'
           )}
           className={s.photo}
           fallback={miFallback}

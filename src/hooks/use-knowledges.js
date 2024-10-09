@@ -4,28 +4,7 @@ import { dataAnalysisIcon, designIcon, developmentIcon } from '@icons'
 export const useKnowledges = () => {
   const { t } = useTranslation()
 
-  return [
-    {
-      icon: designIcon,
-      title: t('Design'),
-      description: t(
-        'A criatividade faz parte da minha personalidade. Mas, para além do visual, meus projetos também costumam ser alinhados com as melhores práticas de UX.'
-      ),
-      list: [
-        {
-          name: t('UI/UX'),
-          link: 'https://dev.to/milenaemmert/ate-os-ventos-te-sopram-experiencias-c9l'
-        },
-        { name: t('Web'), link: 'https://pt.wikipedia.org/wiki/Web_design' },
-        { name: t('GIMP'), link: 'https://www.gimp.org' },
-        { name: t('Canva'), link: 'https://www.canva.com/pt_br' },
-        {
-          name: t('Illustrator'),
-          link: 'https://www.adobe.com/br/products/illustrator.html'
-        },
-        { name: t('Figma'), link: 'https://www.figma.com' }
-      ]
-    },
+  return [  
     {
       icon: developmentIcon,
       title: t('Programação'),
@@ -54,7 +33,7 @@ export const useKnowledges = () => {
       icon: dataAnalysisIcon,
       title: t('Análise de Dados'),
       description: t(
-        'Os dados nos guiam e nos levam a lugares impensáveis. Por isso, as decisões que tomo em meu trabalho partem da coleta, análise e tratamento de dados.'
+        'Os dados nos guiam. Por isso as decisões que tomo partem da coleta, análise, tratamento e compartilhamento de dados, seguindo o processo de ETL.'
       ),
       list: [
         { name: t('MySQL'), link: 'https://www.mysql.com' },
@@ -68,6 +47,27 @@ export const useKnowledges = () => {
           name: t('Power BI'),
           link: 'https://www.microsoft.com/pt-br/power-platform/products/power-bi'
         }
+      ]
+    },
+    {
+      icon: designIcon,
+      title: t('Design'),
+      description: t(
+        'A criatividade faz parte da minha personalidade. Mas, para além do visual, meus projetos também são alinhados com as melhores práticas de UX.'
+      ),
+      list: [
+        {
+          name: t('UI/UX'),
+          link: 'https://dev.to/milenaemmert/ate-os-ventos-te-sopram-experiencias-c9l'
+        },
+        { name: t('Web'), link: 'https://pt.wikipedia.org/wiki/Web_design' },
+        { name: t('GIMP'), link: 'https://www.gimp.org' },
+        { name: t('Canva'), link: 'https://www.canva.com/pt_br' },
+        {
+          name: t('Illustrator'),
+          link: 'https://www.adobe.com/br/products/illustrator.html'
+        },
+        { name: t('Figma'), link: 'https://www.figma.com' }
       ]
     }
   ]
