@@ -162,7 +162,7 @@ export const TRANSLATIONS = {
   'Foi a minha porta de entrada na tecnologia. Todo projeto que crio, seja para design ou dados, penso de forma alinhada com os meus aprendizados de desenvolvimento.':
     {
       en: 'It was my gateway into technology. Every project I create, whether for design or data, is aligned with my development learnings.',
-      es: 'Fue mi puerta de entrada al mundo de la tecnología. Cada proyecto que creo, ya sea de diseño o datos, lo pienso de manera alineada con mis conocimientos de programación.'
+      es: 'Fue mi puerta de entrada al mundo de la tecnología. Cada proyecto que creo, ya sea de diseño o datos, alineo con mis conocimientos de programación.'
     },
   'HTML': {
     en: 'HTML',
@@ -194,8 +194,8 @@ export const TRANSLATIONS = {
   },
   'Os dados nos guiam. Por isso as decisões que tomo partem da coleta, análise, tratamento e compartilhamento de dados, seguindo o processo de ETL.':
     {
-      en: 'Data guides us and takes us to unimaginable places. The decisions I make in my work are based on data collection, analysis and processing.',
-      es: 'Los datos nos guían y nos llevan a lugares inimaginables. Por eso, las decisiones que tomo en mi trabajo parten de la recolección, análisis y tratamiento de datos.'
+      en: 'Data guides us. The decisions I make are based on ETL process, which includes data collection, analysis, processing, and sharing.',
+      es: 'Los datos nos guían. Por eso, las decisiones que tomo se basan en la recopilación, análisis, procesamiento y compartición de datos, siguiendo el proceso de ETL.'
     },
   'MySQL': {
     en: 'MySQL',
@@ -209,9 +209,9 @@ export const TRANSLATIONS = {
     en: 'Python',
     es: 'Python'
   },
-  'Apps Script': {
-    en: 'Apps Script',
-    es: 'Apps Script'
+  'Apps e Office Scripts': {
+    en: 'Apps and Office Scripts',
+    es: 'Apps y Office Scripts'
   },
   'Power BI': {
     en: 'Power BI',

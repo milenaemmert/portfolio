@@ -42,7 +42,7 @@ export const useKnowledges = () => {
           link: 'https://www.microsoft.com/pt-br/microsoft-365/excel'
         },
         { name: t('Python'), link: 'https://www.python.org' },
-        { name: t('Apps Script'), link: 'https://www.google.com/script/start' },
+        { name: t('Apps e Office Scripts'), link: 'https://www.google.com/script/start' },
         {
           name: t('Power BI'),
           link: 'https://www.microsoft.com/pt-br/power-platform/products/power-bi'
