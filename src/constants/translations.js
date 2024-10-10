@@ -111,10 +111,10 @@ export const TRANSLATIONS = {
     en: 'Milena Emmert',
     es: 'Milena Emmert',
   },
-  'Sou analista de dados, instrutora e tenho experiência como dev front-end e conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na coleta e análise de dados e na experiência do usuário.':
+  'Sou analista de dados, instrutora, tenho experiência como dev front-end e conhecimento em design. Essas habilidades permitem que eu colabore de forma analítica e criativa na solução de problemas, fundamentando meu trabalho na análise de dados e experiência do usuário.':
     {
-      en: 'I am a data analyst and instructor with experience as a front-end developer and knowledge in design. These skills allow me to collaborate both analytically and creatively in problem-solving, basing my work on data collection and analysis, as well as user experience.',
-      es: 'Soy analista de datos e instructora con experiencia como desarrolladora front-end y conocimientos en diseño. Estas habilidades me permiten colaborar de manera analítica y creativa en la resolución de problemas, basando mi trabajo en la recopilación y análisis de datos y en la experiencia de los usuarios.',
+      en: 'I am a data analyst, instructor, and have experience in front-end development and design. These skills allow me to collaborate both analytically and creatively in problem-solving, basing my work on data collection and analysis, as well as user experience.',
+      es: 'Soy analista de datos, instructora, tengo experiencia como desarrolladora front-end y conocimientos en diseño. Estas habilidades me permiten colaborar de manera analítica y creativa en la resolución de problemas, basando mi trabajo en la recopilación y análisis de datos y en la experiencia de los usuarios.',
     },
   'Foto da Milena Emmert, que é analista de dados, instrutora e desenvolvedora. Ela possui cabelo loiro, está usando uma boina bege e um cachecol bordô.':
     {
